@@ -1,0 +1,14 @@
+.l-page {
+  @include flex-column;
+  @include media-below($bp-xl) {
+    padding-bottom: 4rem;
+  }
+}
+
+.l-section {
+  padding: 0 3.25rem;
+
+  @include media-below($bp-xl) {
+    padding: 0;
+  }
+}

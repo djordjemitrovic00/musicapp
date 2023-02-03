@@ -1,0 +1,39 @@
+.u-mr-24 {
+  margin-right: 24px;
+}
+
+.u-ml-32 {
+  margin-left: pxToRem(32px);
+}
+
+.u-position-relative {
+  position: relative;
+}
+
+.u-column {
+  @include flex-column;
+}
+
+.u-display-none {
+  display: none;
+}
+
+.u-superscript {
+  font-size: pxToRem(14px);
+  font-weight: medium;
+}
+
+.u-text-align-right {
+  text-align: right;
+}
+
+.u-hide {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  display: none;
+  position: fixed;
+  top: -20px;
+  right: -20px;
+  z-index: -1;
+}

@@ -1,0 +1,173 @@
+.c-btn {
+  @include outline-none;
+  @include button-clear;
+  @include flex-center;
+  font-size: pxToRem(18px);
+  line-height: 1.35;
+  padding: pxToRem(8px) pxToRem(8px);
+  border-radius: $border-radius;
+  box-shadow: $button-shadow-pressed;
+  color: inherit;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  white-space: nowrap;
+  min-width: pxToRem(120px);
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+
+  &.c-btn--primary {
+    background-color: $color-primary;
+    color: $white;
+    border: 1px solid $color-primary;
+
+    &:disabled {
+      &:hover {
+        background-color: $color-primary;
+        box-shadow: none;
+      }
+    }
+
+    &:hover {
+      background-color: $color-primary-light;
+      box-shadow: $button-shadow-hover;
+    }
+
+    &:focus,
+    &:active {
+      background-color: $color-primary-dark;
+      box-shadow: $button-shadow-pressed;
+    }
+  }
+
+  &.c-btn--primary-outlined {
+    background-color: transparent;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &:disabled {
+      &:hover {
+        color: $color-primary;
+        border: 1px solid $color-primary;
+      }
+    }
+
+    &:hover {
+      color: $color-primary;
+      border: 1px solid $color-primary;
+    }
+
+    &:focus,
+    &:active {
+      color: $color-primary;
+      border: 1px solid $color-primary;
+    }
+  }
+
+  &.c-btn--blue {
+    background-color: $blue-3;
+    color: $white;
+    background-color: $blue-3;
+  }
+
+  &.c-btn--white {
+    background-color: $white;
+    color: $grey-3;
+    border: 1px solid $grey-4;
+    box-shadow: $box-shadow;
+
+    &:disabled {
+      &:hover {
+        background-color: $white;
+        color: $grey-3;
+      }
+    }
+
+    &:hover {
+      color: $grey-5;
+    }
+
+    &:focus,
+    &:active {
+      background-color: $grey;
+    }
+  }
+
+  &.c-btn--primary-clear {
+    background-color: transparent;
+    color: $color-primary;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  &.c-btn--auto {
+    min-width: auto;
+  }
+
+  &.c-btn--sm {
+    font-size: pxToRem(16px);
+    line-height: 1.5;
+    padding: pxToRem(4px) pxToRem(15px);
+  }
+
+  &.c-btn--capitalize {
+    text-transform: capitalize;
+  }
+
+  &.c-btn--bank-acount-card {
+    padding: 0 pxToRem(16px);
+    min-height: pxToRem(32px);
+    min-width: pxToRem(120px);
+    font-size: pxToRem(16px);
+    line-height: 1.5;
+  }
+
+  &.c-btn--hidden {
+    visibility: hidden;
+    height: 0;
+  }
+
+  @include media-below($bp-md) {
+    padding: pxToRemMd(4px) pxToRemMd(25px);
+    font-size: pxToRemMd(16px);
+    line-height: 1.5;
+    min-width: pxToRemMd(80px);
+
+    &.c-btn--auth {
+      padding: pxToRemMd(12px) pxToRemMd(25px);
+      line-height: 1.35;
+      font-size: pxToRemMd(18px);
+    }
+
+    &.c-btn--sm {
+      padding: pxToRemMd(4px) pxToRemMd(15px);
+    }
+
+    &.c-btn--bank-acount-card {
+      flex-grow: 1;
+      min-height: pxToRemMd(40px);
+      padding: pxToRemMd(8px) pxToRemMd(16px);
+      font-size: pxToRemMd(18px);
+      line-height: 1.33;
+    }
+
+    &.c-btn--lg {
+      padding: pxToRemMd(7.5px) pxToRemMd(15px);
+      font-size: pxToRemMd(18px);
+      line-height: 1.5;
+    }
+  }
+
+  @include media-below($bp-xs) {
+    white-space: unset;
+  }
+}

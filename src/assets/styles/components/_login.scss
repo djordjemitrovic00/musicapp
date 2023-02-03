@@ -1,0 +1,72 @@
+.c-login {
+  &.c-login--user {
+    .c-login__form {
+      .c-input:first-child {
+        margin-bottom: pxToRem(20px);
+      }
+    }
+  }
+
+  @include media-below($bp-xl) {
+    .c-login__link {
+      margin-top: pxToRemMd(70px);
+    }
+  }
+
+  @include media-below($bp-md) {
+    .c-login__form {
+      margin: pxToRemMd(36px) 0 0;
+    }
+
+    .c-login__button {
+      margin-bottom: pxToRemMd(40px);
+      margin-top: pxToRemMd(36px);
+    }
+
+    .c-login__link {
+      margin-top: pxToRemMd(80px);
+    }
+
+    &.c-login--user {
+      .c-login__form {
+        .c-input:first-child {
+          margin-bottom: pxToRemMd(20px);
+        }
+      }
+    }
+  }
+}
+
+.c-login__link {
+  color: $color-primary;
+  font-weight: 600;
+  margin-top: pxToRem(40px);
+  width: max-content;
+}
+
+.c-login__form {
+  margin: pxToRem(36px) 0 0;
+  > form {
+    @include flex-column;
+  }
+}
+
+.c-login__button {
+  width: 100%;
+  margin-top: pxToRem(68px);
+  margin-bottom: pxToRem(24px);
+}
+
+.c-login__text {
+  text-align: center;
+  width: 100%;
+  color: $blue;
+
+  a {
+    color: $color-primary;
+    font-weight: bold;
+    letter-spacing: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+}

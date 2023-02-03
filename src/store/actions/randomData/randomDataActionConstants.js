@@ -1,0 +1,5 @@
+export const LOAD_DATA = 'LOAD_DATA';
+export const UPDATE_PAGE = 'UPDATE_PAGE';
+export const UPDATE_ITEMS_PER_PAGE = 'UPDATE_ITEMS_PER_PAGE';
+export const UPDATE_FILTER = 'UPDATE_FILTER';
+export const UPDATE_SORT = 'UPDATE_SORT';

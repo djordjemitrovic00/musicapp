@@ -1,0 +1,46 @@
+.c-error-page {
+  margin-top: pxToRem(120px);
+
+  @include media-below($bp-md) {
+    margin-top: pxToRemMd(120px);
+
+    .c-error-page__title {
+      font-size: pxToRemMd(160px);
+      margin-bottom: pxToRemMd(27px);
+    }
+
+    .c-error-page__text {
+      margin-bottom: pxToRem(24px);
+    }
+  }
+}
+
+.c-error-page__content-container {
+  @include flex-center;
+}
+
+.c-error-page__content {
+  @include flex-column;
+  align-items: center;
+  padding: 0 pxToRem(32px);
+}
+
+.c-error-page__title {
+  font-size: pxToRem(160px);
+  line-height: 1.35;
+  color: $dark-blue;
+  margin-bottom: pxToRem(32px);
+  color: $color-primary;
+  font-weight: bold;
+}
+
+.c-error-page__text {
+  font-weight: 600;
+  margin-bottom: pxToRem(24px);
+  text-align: center;
+}
+
+.c-error-page__button {
+  margin-bottom: pxToRem(16px);
+  min-width: pxToRem(250px);
+}

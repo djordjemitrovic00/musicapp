@@ -1,0 +1,7 @@
+.c-icon-button {
+  @include flex-center;
+  @include outline-none;
+  @include button-clear;
+  user-select: none;
+  cursor: pointer;
+}

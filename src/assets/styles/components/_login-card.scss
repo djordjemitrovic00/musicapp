@@ -1,0 +1,31 @@
+.c-login-card {
+  border: 1px solid $color-primary-light;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  max-width: pxToRem(624px);
+  width: 100%;
+  margin: pxToRem(28px) auto 0;
+  padding: pxToRem(36px) pxToRem(40px) pxToRem(32px);
+}
+
+.c-login-card__note {
+  color: $color-primary;
+  font-weight: 600;
+  margin-bottom: pxToRem(37px);
+}
+
+.c-login-card__form {
+  display: grid;
+  grid-row-gap: pxToRem(24px);
+}
+
+.c-login-card__submit {
+  margin-top: pxToRem(24px);
+  width: 100%;
+}
+
+.c-login-card__question {
+  color: $blue;
+  font-weight: 600;
+  margin-bottom: pxToRem(16px);
+}

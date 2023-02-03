@@ -1,0 +1,72 @@
+$base-font-size: 16px;
+$base-font-size-md: 14px;
+
+$font-family: 'Avenir Next';
+
+// Colors
+$color-primary: #024f86;
+$color-primary-light: #024f86;
+$color-primary-dark: #003246;
+$yellow: #ffeac1;
+$white: #ffffff;
+$grey: #f4f4f4;
+$grey-1: #ccced0;
+$grey-2: #fafafa;
+$grey-3: #c2c5c6;
+$grey-4: #d8d8d8;
+$grey-5: #808285;
+$grey-6: #c9d6db;
+$grey-7: rgba(128, 130, 133, 0.5);
+$grey-8: rgba(201, 214, 219, 0.25);
+$grey-9: #ebeff2;
+$grey-10: #f0f5f6;
+$grey-11: #8b8b8b;
+$grey-12: #b0bfc540;
+$grey-13: #9d9ea4;
+$grey-14: #f7fafa;
+$grey-15: #ebf2f2;
+$dark-blue: #003246;
+$blue: #4e7a8c;
+$blue-1: #6e8fae;
+$blue-2: #024f86;
+$blue-3: #0f85ec;
+$blue-4: #5c7e9f;
+$blue-5: #dde5e7;
+$black: #000;
+$black-1: rgba(0, 0, 0, 0.3);
+$black-2: rgba(32, 38, 43, 0.9);
+$black-4: #172029;
+$black-5: #272727;
+$black-6: #1d2731;
+$red: #ff5028;
+$success: #09846b;
+$success-1: #00876a;
+$success-2: #008a68;
+
+// Shadow
+$button-shadow-hover: 0 5px 6px 0 rgba(112, 120, 135, 0.24);
+$button-shadow-pressed: 0 2px 4px 0 rgba(112, 120, 135, 0.24);
+$box-shadow: 0 3px 8px 0 rgba(112, 120, 135, 0.24);
+$account-dropdown-shadow: 0 6px 38px 0 rgba(112, 120, 135, 0.56);
+
+// Border Radius
+$border-radius: 4px;
+$border-radius-md: 8px;
+
+// Breakpoints
+$bp-xxs: 325px;
+$bp-xs: 400px;
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1350px;
+
+// z-index
+$index-xxs: 1;
+$index-xs: 2;
+$index-sm: 3;
+$index-md: 4;
+$index-lg: 5;
+$index-xl: 6;
+$index-xxl: 7;

@@ -1,0 +1,14 @@
+export const PERIOD_SYMBOL = 190;
+export const COMMA_SYMBOL = 188;
+export const PLUS_SYMBOL = 187;
+export const MINUS_SYMBOL = 189;
+export const NUMPAD_PERIOD_SYMBOL = 110;
+export const NUMPAD_MINUS_SYMBOL = 109;
+export const NUMPAD_PLUS_SYMBOL = 107;
+export const K_KEYCODE = 75;
+export const DOWN_ARROW_KEYCODE = 38;
+export const UP_ARROW_KEYCODE = 40;
+export const RIGHT_ARROW_KEYCODE = 39;
+export const LEFT_ARROW_KEYCODE = 37;
+export const BACKSPACE_KEYCODE = 8;
+export const TAB_KEYCODE = 9;

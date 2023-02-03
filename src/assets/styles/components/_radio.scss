@@ -1,0 +1,29 @@
+.c-radio {
+  display: flex;
+  cursor: pointer;
+
+  &.c-radio--selected {
+    border-color: $dark-blue;
+  }
+}
+
+.c-radio__field {
+  display: none;
+}
+
+.c-radio__indicator {
+  margin-top: pxToRem(4px);
+  margin-right: pxToRem(16px);
+}
+
+.c-radio__icon {
+  width: pxToRem(16px);
+  height: pxToRem(16px);
+}
+
+.c-radio__text {
+  font-size: pxToRem(14px);
+  line-height: 1.15;
+  color: $blue;
+  user-select: none;
+}

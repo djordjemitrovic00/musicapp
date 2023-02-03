@@ -1,0 +1,106 @@
+export default {
+  app: {
+    title: 'React template'
+  },
+  refresh: {
+    title: 'Are you active?',
+    cta:
+      "You were registered as not active, please confirm that you are active in the next minute, if you don't you will be logged out.",
+  },
+  common: {
+    close: 'Close',
+    trademark: 'TM',
+    search: 'Search',
+    error: 'Error',
+    continue: 'Continue',
+    labelUsername: 'Username',
+    labelEmail: 'Email',
+    labelPassword: 'Password',
+    next: 'Next',
+    nextPage: 'Next page',
+    previousPage: 'Previous page',
+    back: 'Back',
+    goBack: 'Go Back',
+    ok: 'Ok',
+    done: 'Done',
+    confirm: 'Confirm',
+    printDownload: 'Print/Download',
+    cancel: 'Cancel',
+    remove: 'Remove',
+    invite: 'Invite',
+    save: 'Save',
+    complete: 'Complete',
+    download: 'Download',
+    yes: 'Yes',
+    no: 'No',
+    to: 'to',
+    select: 'Select...',
+    none: 'None',
+    date: {
+      range: '{{start}} to {{end}}',
+    },
+  },
+  register: {
+    registerTitle: "Register",
+    usernameRequired: 'Username is required.',
+    emailFormat: 'Invalid email address format.',
+    emailRequired: 'An email or username is required.',
+    passwordLength: 'Your password contain between 8 and 50 characters.',
+    passwordRequired: 'A Password is required.',
+  },
+  login: {
+    welcome: 'React template',
+    dontHaveAccount: "Don't have an account? ",
+    emailFormat: 'Invalid email address format.',
+    emailRequired: 'An email or username is required.',
+    noUsers: 'There are no users with that email.',
+    passwordStrength: 'Your password is {{strength}}.',
+    passwordLength: 'Your password contain between 8 and 50 characters.',
+    signUpRecommendation: 'Sign up',
+    email: 'Please enter your email address or username to log in:',
+    logInTitle: 'Log In',
+    logIn: 'Log In',
+    signUp: 'Sign Up',
+    usernameRequired: 'Username is required.',
+    passwordRequired: 'A Password is required.',
+    forgotYourPassword: 'Forgot your password?',
+    forgotPasswordEmail:'Email',
+    useDifferentEmail: 'Use different email address or username',
+  },
+  password: {
+    weak: 'weak',
+    average: 'average',
+    good: 'good',
+    strong: 'strong',
+  },
+  forgotPassword: {
+    title: 'Forgot Password',
+    label: 'Send email',
+    emailRequired: 'An email is required.',
+    emailFormat: 'Invalid email address format.',
+    forgotPassword: {
+      title: 'Forgot Password',
+      subtitle:
+        'Please answer the security question to gain access to your account:',
+      label: 'Reset Password',
+    },
+  },
+  notFound: {
+    text: "We're sorry but we couldn't find the page you were looking for.",
+    goBack: 'Go back to homepage',
+  },
+  errorPage: {
+    text:
+      "We're sorry, an internal server error came up. Please be patient or try again later.",
+    goBack: 'Go back to homepage',
+    logout: 'Logout',
+  },
+  apiErrors:{
+    ClientIpAddressIsNullOrEmpty:"Client Ip address is null or empty",
+    UsernameDoesNotExist: "Username does not exist",
+    WrongCredentials: "Wrong credentials",
+    SomethingWentWrong: "Something went wrong",
+    WrongPasswordAccountIsLocked: "Wrong credentials, account is locked",
+    AccountIsLocked: "Account is locked"
+  }
+};

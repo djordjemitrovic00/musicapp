@@ -1,0 +1,244 @@
+// Overwrite
+.ais-ClearRefinements-button {
+  color: $grey-11;
+  font-size: pxToRem(14px);
+  letter-spacing: 0;
+  line-height: 1.15;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  position: relative;
+  transition: all 0.2s;
+  outline: none;
+  cursor: pointer;
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: auto;
+  }
+
+  &:hover {
+    color: $color-primary-light;
+  }
+
+  &:active {
+    color: $color-primary-dark;
+  }
+}
+
+.ais-RefinementList {
+  margin-bottom: pxToRem(32px);
+  margin-left: pxToRem(16px);
+
+  &.c-filter__refinement--closed {
+    display: none;
+  }
+}
+
+.ais-RefinementList.expanded {
+  .ais-RefinementList-showMore::before {
+    transform: rotate(180deg);
+  }
+}
+
+.ais-RefinementList-showMore {
+  color: $color-primary;
+  font-size: pxToRem(14px);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.56;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  margin-left: pxToRem(20px);
+  outline: none;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+
+  &[disabled] {
+    display: none;
+  }
+
+  &:hover {
+    color: $color-primary-light;
+  }
+
+  &:active {
+    color: $color-primary-dark;
+  }
+
+  &::before {
+    content: '';
+    background-image: url('../images/chevron-down.svg');
+    fill: $color-primary;
+    -webkit-text-stroke-color: $color-primary;
+    background-position: center;
+    width: pxToRem(20px);
+    height: pxToRem(20px);
+    position: absolute;
+    left: pxToRem(-22px);
+    transition: all 0.2s;
+  }
+}
+
+.ais-SearchBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: pxToRem(24px);
+}
+
+.ais-SearchBox-input {
+  border: none;
+  color: $blue;
+  font-size: pxToRem(16px);
+  letter-spacing: 0;
+  line-height: 1.5;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  flex-grow: 1;
+
+  &::placeholder {
+    color: $blue;
+    font-size: pxToRem(16px);
+  }
+
+  @include media-below($bp-xl) {
+    font-size: pxToRemMd(16px);
+
+    &::placeholder {
+      font-size: pxToRemMd(16px);
+    }
+  }
+}
+
+.ais-SearchBox-form {
+  border: 1px solid $grey-6;
+  border-radius: $border-radius;
+  overflow: hidden;
+  padding: 0 pxToRem(12px);
+  height: pxToRem(33px);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-width: pxToRem(340px);
+}
+
+.ais-SearchBox-submit,
+.ais-SearchBox-reset {
+  border: none;
+  background: transparent;
+  outline: none;
+  height: pxToRem(16px);
+
+  > svg {
+    color: $blue-1;
+    fill: $blue-1;
+  }
+}
+
+.ais-SearchBox-submitIcon {
+  width: pxToRem(14px);
+  height: pxToRem(14px);
+  color: $blue-1;
+  fill: $blue-1;
+}
+
+.ais-SearchBox-resetIcon {
+  width: pxToRem(14px);
+  height: pxToRem(14px);
+}
+
+.ais-SearchBox-reset {
+  margin-left: pxToRem(10px);
+  cursor: pointer;
+}
+
+.c-plaid-link {
+  padding: 0 !important;
+  background: transparent !important;
+  border-width: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: $box-shadow !important;
+
+  &.c-plaid-link--select-card {
+    margin-top: pxToRem(40px);
+
+    .c-select-card__button {
+      margin-top: 0;
+    }
+  }
+}
+
+.ais-InfiniteHitsWrap {
+  min-height: pxToRem(200px);
+}
+
+.ais-Highlight-highlighted {
+  background: #fff1d6;
+  font-style: normal;
+}
+
+.acsb-trigger {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.ais-CurrentRefinements-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  > :not(:last-child) {
+    margin-right: pxToRem(16px);
+  }
+}
+
+.ais-CurrentRefinements-item {
+  border-radius: $border-radius;
+  background-color: $dark-blue;
+  padding: pxToRem(4px) pxToRem(8px);
+  flex-shrink: 0;
+  margin-bottom: pxToRem(16px);
+}
+
+.ais-CurrentRefinements-item-link {
+  font-size: pxToRem(16px);
+  line-height: 1.5;
+  font-weight: 600;
+  color: $white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.ais-CurrentRefinements-close {
+  color: $white;
+  width: pxToRem(24px);
+  margin-left: pxToRem(8px);
+}
+
+.recharts-surface {
+  overflow: visible;
+}
+
+.recharts-cartesian-axis-tick-value {
+  color: #9aa1a9;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.recharts-tooltip-wrapper:empty{
+  display: 'none',
+}
+.recharts-text{
+  &.recharts-pie-label-text{
+  font-size: 14px;
+  @include media-below($bp-xl) {
+    font-size: 12px;
+  }
+  }
+}

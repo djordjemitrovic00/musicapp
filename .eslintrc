@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "security"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/button-has-type": "off",
+    "react/require-default-props": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "consistent-return": "off",
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "no-template-curly-in-string": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": ["error", {
+     "endOfLine":"auto"
+   }]
+  }
+}

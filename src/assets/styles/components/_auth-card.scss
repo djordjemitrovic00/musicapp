@@ -1,0 +1,45 @@
+.c-auth-card {
+  max-width: pxToRem(624px);
+  width: 100%;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  border: 1px solid $color-primary-light;
+  padding: pxToRem(24px) pxToRem(40px) pxToRem(32px);
+
+  @include media-below($bp-md) {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    max-width: 100%;
+
+    .c-auth-card__title {
+      text-align: left;
+      font-size: pxToRemMd(36px);
+      margin-bottom: pxToRemMd(6px);
+    }
+
+    .c-auth-card__subtitle {
+      font-size: pxToRemMd(16px);
+      text-align: left;
+    }
+  }
+}
+
+.c-auth-card__title {
+  text-align: left;
+  font-size: pxToRem(36px);
+  line-height: 1.22;
+  color: $dark-blue;
+  font-weight: 400;
+  margin-bottom: pxToRem(16px);
+}
+
+.c-auth-card__subtitle {
+  font-size: pxToRem(16px);
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: $color-primary;
+  text-align: left;
+  width: 100%;
+  font-weight: 600;
+}

@@ -1,0 +1,23 @@
+.c-auth {
+  @include flex-center;
+  flex-direction: column;
+  padding-bottom: pxToRem(56px);
+
+  @include media-below($bp-md) {
+    padding: 0 pxToRemMd(24px) pxToRemMd(92px);
+
+    .c-auth__title {
+      margin: pxToRemMd(48px) auto;
+      font-size: pxToRemMd(24px);
+      line-height: 1.35;
+    }
+  }
+}
+
+.c-auth__title {
+  margin: pxToRem(56px) auto pxToRem(80px);
+  font-size: pxToRem(36px);
+  line-height: 1.22;
+  color: $dark-blue;
+  font-weight: bold;
+}

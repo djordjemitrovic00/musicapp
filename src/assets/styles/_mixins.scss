@@ -1,0 +1,81 @@
+@mixin desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media (min-width: 1480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-up($media) {
+  @media only screen and (min-width: $media) {
+    @content;
+  }
+}
+
+@mixin media-below($media) {
+  @media only screen and (max-width: #{$media - 0.02px}) {
+    @content;
+  }
+}
+
+@mixin media-between($mediaMin, $mediaMax) {
+  @media screen and (min-width: $mediaMin) and (max-width: #{$mediaMax - 0.02px}) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin button-clear {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+@mixin outline-none {
+  &,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin reset-position {
+  position: relative;
+  top: initial;
+  left: initial;
+  right: initial;
+  bottom: initial;
+}
+
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

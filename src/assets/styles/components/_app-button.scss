@@ -1,0 +1,60 @@
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  border-radius: $border-radius;
+  background-color: $color-primary;
+  box-shadow: 0 2px 4px 0 rgba(112, 120, 135, 0.24);
+  border: transparent;
+  padding: 8px 0;
+  color: $white;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  font-family: "Avenir Next";
+  font-size: pxToRem(18px);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 26px;
+  outline: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &.c-button--clean {
+    background: transparent;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+
+    &:hover {
+      border-color: $color-primary-light;
+      color: $color-primary-light;
+      background-color: transparent;
+    }
+
+    &:active {
+      border-color: $color-primary-dark;
+      color: $color-primary-dark;
+    }
+  }
+
+  &.c-button--dropdown {
+    justify-content: flex-end;
+    padding: 8px 14px;
+    background-image: url("../../images/down.svg");
+    background-repeat: no-repeat;
+    background-position: 8% 50%;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+
+  &:active {
+    background-color: $color-primary-dark;
+  }
+}

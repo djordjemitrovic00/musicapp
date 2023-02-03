@@ -1,0 +1,7 @@
+@function pxToRem($target, $context: $base-font-size) {
+  @return ($target / $context) * 1rem;
+}
+
+@function pxToRemMd($target, $context: $base-font-size-md) {
+  @return ($target / $context) * 1rem;
+}
